@@ -3,6 +3,10 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
+[scripts]
+dev = "python src/yt-download.py"
+build = "pyinstaller --onefile --name src/yt-download-x86_64-pc-windows-msvc yt-download.py"
+
 [packages]
 pytube = "*"
 requests = "*"
